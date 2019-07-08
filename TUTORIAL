@@ -1,0 +1,23 @@
+instala o pacote pra poder fazer ambiente virtual: sudo apt-get install python3-venv
+python3 -m venv venv pra criar o ambiente virtual -> no mesmo nivel de manage.py
+
+source /venv/bin/activate pra ativar o ambiente virtual
+
+pip install -r requirements.pip pra instalar as dependencias
+
+python manage.py migrate pra criar o banco
+
+python manage.py createsuperuser > se quiser criar um admin mas não  é necessario
+
+
+em bot.py na raiz e em playlists/share_bot.py tem que trocar a key do bot, pra ir pro teu bot
+
+em playlist/views.py tem um campo key que define a tua chave tmdb, ela ja ta setada, mas pra tu saber onde trocar caso precise
+
+o ideal tanto nos arquivos de bot quanto a key do tmdb na playlist é tu fazer o seguinte
+
+em algum lugar criar um arquivo .py e definir essas variavveis nele, depois importar e usar onde precisa
+assim tu pode upar tranquilo no git e deixar esse arquivo no gitignore
+
+no gitignore também adiciona o banco local .sqlite3 e a pasta venv
+isso é criando quando o projeto é configurado
