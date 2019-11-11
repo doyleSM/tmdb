@@ -1,2 +1,2 @@
 # tmdb
-Aplicação permite buscar filmes na API no TMDB, criar playlist de filmes e compartilha-las em grupo do telegram através de bots.
+Aplicação permite buscar filmes na API no TMDB, criar playlists de filmes e compartilha-las em grupo um do telegram através de bots.
